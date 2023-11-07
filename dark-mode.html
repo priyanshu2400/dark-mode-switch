@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animantions and keyframes || DARK MODE</title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        animation-name: back;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+      .container {
+        margin: 45vh auto;
+        display: flex;
+        justify-self: center;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        background-color: rgb(242, 255, 0);
+        border-radius: 50px;
+        width: 120px;
+        border: 3px solid black;
+        box-shadow: 1px 1px 20px black;
+        animation-name: b;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: normal;
+      }
+      .box {
+        margin: 4px;
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 700px;
+        animation-duration: 4s;
+        animation-name: bibhu;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: normal;
+        box-shadow: 4px 4px 15px rgb(0, 0, 0);
+        height: 50px;
+        width: 50px;
+      }
+      @keyframes bibhu {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        50% {
+          background-color: yellow;
+          border: 3px solid yellow;
+          top: px;
+          left: 56px;
+          box-shadow: 1px 1px 10px rgb(255, 255, 255);
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+      @keyframes b {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        50% {
+          background-color: rgb(0, 0, 0);
+          box-shadow: 1px 1px 20px rgb(255, 255, 255);
+          border: 3px solid white;
+          top: px;
+          left: 50px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+      @keyframes back {
+        0% {
+        }
+        50% {
+          background-color: rgb(28, 25, 25);
+          top: px;
+          left: 50px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
